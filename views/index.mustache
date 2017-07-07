@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- No duplicate letter, only letters -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <header id="header">
+    <h1>Mystery Word</h1>
+    <h1>{{game.message}}</h1>
+    <p>You have <span id="numOfGuesses">{{game.turnsLeft}}</span> {{game.turnsSyntax}} left.</p>
+  </header>
+  <main id="main">
+    <section id="word">
+      {{#game}}
+        {{#correctChars}}
+          <span>{{.}}</span>
+        {{/correctChars}}
+      {{/game}}
+    </section>
+    <section class="guessed">
+      {{#game}}
+        {{#incorrectChars}}
+          <span>{{.}}</span>
+        {{/incorrectChars}}
+      {{/game}}
+    </section>
+    <section class="guess">
+      <form id="formLetter" action="/" method="post">
+        <input id="letterInput" type="text" name="letter" maxlength="1">
+        <button type="submit" id="submitLetter">Guess</button>
+      </form>
+      <form action="/reset" method="post">
+        <button type="submit">Reset</button>
+      </form>
+    </section>
+  </main>
+  <script src="/static/main.js" charset="utf-8"></script>
+</body>
+</html>

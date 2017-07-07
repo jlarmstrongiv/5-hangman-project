@@ -1,0 +1,49 @@
+{
+  "game": {
+    "word": "connected",
+    "minWordLength": 7,
+    "allChars": [
+      "c",
+      "o",
+      "n",
+      "n",
+      "e",
+      "c",
+      "t",
+      "e",
+      "d"
+    ],
+    "correctChars": [
+      "c",
+      "_",
+      "_",
+      "_",
+      "e",
+      "c",
+      "_",
+      "e",
+      "d"
+    ],
+    "incorrectChars": [
+      "a",
+      "b",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k"
+    ],
+    "defaultTurns": 8,
+    "turnsLeft": 0,
+    "turnsSyntax": "turns",
+    "winMessage": "You win..",
+    "loseMessage": "You lose, sucka",
+    "duplicateMessage": "You guessed that already, sucka",
+    "invalidMessage": "Guess a letter, sucka",
+    "gameMessage": "",
+    "message": "",
+    "sucka": "https://www.youtube.com/watch?v=fyGbKElMy2A"
+  },
+  "_locals": {}
+}
